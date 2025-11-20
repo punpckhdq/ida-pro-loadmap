@@ -72,12 +72,12 @@ jobs:
         # The NDEBUG flag is required to build with redist DLLs, rather than "debug" ones which are only in full VS
         make -C "${RUNNER_WORKSPACE}/ida-sdk-9.2/src" V=1 NDEBUG=1 \
           WindowsSdkDir='C:\Program Files (x86)\Windows Kits\10' \
-          VCINSTALLDIR='C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC' \
+          VCINSTALLDIR='C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC' \
           env
         # Do the same for EA64 version (it will create separate cfg files, except the paths file)
         make -C "${RUNNER_WORKSPACE}/ida-sdk-9.2/src" V=1 NDEBUG=1 __EA64__=1 \
           WindowsSdkDir='C:\Program Files (x86)\Windows Kits\10' \
-          VCINSTALLDIR='C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC' \
+          VCINSTALLDIR='C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC' \
           env
 
     - name: Checkout repository
