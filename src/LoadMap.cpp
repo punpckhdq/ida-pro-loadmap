@@ -17,7 +17,7 @@
 ///     the Free Software Foundation; either version 2 of the License, or
 ///     (at your option) any later version.
 ///     IDA Pro SDK by Hex-rays is required to use this software; that
-///     SDK has more complex licensing situation, and is not under GPL.
+///     SDK has more complex licensing situation, and is not under GPL!
 ////////////////////////////////////////////////////////////////////////////////
 #define PLUG_VERSION "1.4"
 //  standard library headers.
